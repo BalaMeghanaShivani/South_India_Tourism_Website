@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+
+  function add(name,product,price,quantity)
+            {
+                var  x=document.getElementById('add').innerHTML;
+                document.getElementById('add').innerHTML=x+"<tr><td>"+name+"</td><td>"+product+"</td><td>"+price+"</td><td>"+quantity+"</td></tr>"
+            }
+</script>
+</head>
+    <body>
+
+<h1 id="js">Cart</h1>
+        <table border="2">
+            <tr id="js"><th>Name</th><th>Product</th><th>Price</th><th>quantity</th><th>Button</th></tr>
+            <tr><td>Mr.x</td><td>soap</td><td>50</td><td>1</td><td><button onclick="add('Mr.x','soap','50','1')">add</button></td></tr>
+            <tr><td>Mr.y</td><td>oil</td><td>300</td><td>2</td><td><button onclick="add('Mr.y','oil','300','2')">add</button></td></tr>
+            <tr><td>Mr.z</td><td>lentil</td><td>150</td><td>1</td><td><button onclick="add('Mr.z','lentil','150','1')">add</button></td></tr>
+        </table>
+        <table id="add" border="2">
+            <tr id="js"><th>Name</th><th>Product</th><th>price</th><th>quantity</th></tr>
+        </table>
+    </body>
+</html>
